@@ -26,5 +26,6 @@ from os.path import join
 from SCons.Script import DefaultEnvironment, SConscript
 
 SConscript(
-    join(DefaultEnvironment().PioPlatform().get_package_dir(
-        "framework-arduinoespressif32"), "tools", "platformio-build.py"))
+#    join(DefaultEnvironment().PioPlatform().get_package_dir(
+#        "framework-arduinoespressif32"), "tools", "platformio-build.py"))
+    join("https://github.com/espressif/arduino-esp32/tree/stickbreaker-i2c", "tools", "platformio-build.py"))
